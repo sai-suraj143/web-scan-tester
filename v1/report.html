@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Security Scan Results</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+      }
+      th {
+        background-color: #2196f3;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>WebScan Pro Report</h1>
+    <table>
+      <tr>
+        <th>Type</th>
+        <th>Endpoint</th>
+        <th>Parameter</th>
+        <th>Severity</th>
+        <th>Details</th>
+        <th>Mitigation</th>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: admin/password</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: admin/123456</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: admin/guest</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: admin/test</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: user/password</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: user/123456</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: user/guest</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: user/test</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: test/password</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: test/123456</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: test/guest</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: test/test</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: guest/password</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: guest/123456</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: guest/guest</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Auth</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>username/password</td>
+        <td>High</td>
+        <td>Weak credentials found: guest/test</td>
+        <td>Enforce strong credentials.</td>
+      </tr>
+      <tr>
+        <td>Session</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>security</td>
+        <td>Medium</td>
+        <td>Insecure cookie properties: No Secure flag,No HttpOnly flag</td>
+        <td>Set Secure and HttpOnly flags.</td>
+      </tr>
+      <tr>
+        <td>Session</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>PHPSESSID</td>
+        <td>Medium</td>
+        <td>Insecure cookie properties: No Secure flag,No HttpOnly flag</td>
+        <td>Set Secure and HttpOnly flags.</td>
+      </tr>
+      <tr>
+        <td>Session</td>
+        <td>http://localhost:8080/dvwa/login.php</td>
+        <td>PHPSESSID</td>
+        <td>Medium</td>
+        <td>Insecure cookie properties: No Secure flag,No HttpOnly flag</td>
+        <td>Set Secure and HttpOnly flags.</td>
+      </tr>
+      <tr>
+        <td>IDOR</td>
+        <td>http://localhost:8080/dvwa/</td>
+        <td>username</td>
+        <td>High</td>
+        <td>IDOR test value 2 found in response.</td>
+        <td>Enforce server-side access checks.</td>
+      </tr>
+      <tr>
+        <td>IDOR</td>
+        <td>http://localhost:8080/dvwa/</td>
+        <td>user_token</td>
+        <td>High</td>
+        <td>IDOR test value 1 found in response.</td>
+        <td>Enforce server-side access checks.</td>
+      </tr>
+      <tr>
+        <td>IDOR</td>
+        <td>http://localhost:8080/dvwa/</td>
+        <td>user_token</td>
+        <td>High</td>
+        <td>IDOR test value 2 found in response.</td>
+        <td>Enforce server-side access checks.</td>
+      </tr>
+    </table>
+  </body>
+</html>

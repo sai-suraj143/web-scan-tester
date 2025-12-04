@@ -1,0 +1,20 @@
+Type,Endpoint,Parameter,Severity,Details,Mitigation
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: admin/password,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: admin/123456,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: admin/guest,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: admin/test,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: user/password,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: user/123456,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: user/guest,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: user/test,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: test/password,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: test/123456,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: test/guest,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: test/test,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: guest/password,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: guest/123456,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: guest/guest,Enforce strong credentials.
+Auth,http://localhost:8080/dvwa/login.php,username/password,High,Weak credentials found: guest/test,Enforce strong credentials.
+Session,http://localhost:8080/dvwa/login.php,security,Medium,"Insecure cookie properties: No Secure flag,No HttpOnly flag",Set Secure and HttpOnly flags.
+Session,http://localhost:8080/dvwa/login.php,PHPSESSID,Medium,"Insecure cookie properties: No Secure flag,No HttpOnly flag",Set Secure and HttpOnly flags.
+Session,http://localhost:8080/dvwa/login.php,PHPSESSID,Medium,"Insecure cookie properties: No Secure flag,No HttpOnly flag",Set Secure and HttpOnly flags.

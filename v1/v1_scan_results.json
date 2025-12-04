@@ -1,0 +1,35 @@
+{
+    "base_url": "http://localhost:8080/dvwa/",
+    "visited_pages": [
+        "http://localhost:8080/dvwa/"
+    ],
+    "forms": [
+        {
+            "url": "http://localhost:8080/dvwa/",
+            "action": "http://localhost:8080/dvwa/login.php",
+            "method": "post",
+            "inputs": [
+                {
+                    "name": "username",
+                    "type": "text",
+                    "value": ""
+                },
+                {
+                    "name": "password",
+                    "type": "password",
+                    "value": ""
+                },
+                {
+                    "name": "Login",
+                    "type": "submit",
+                    "value": "Login"
+                },
+                {
+                    "name": "user_token",
+                    "type": "hidden",
+                    "value": "0004d742bae398ac6e1f0a86067358bc"
+                }
+            ]
+        }
+    ]
+}

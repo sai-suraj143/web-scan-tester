@@ -1,0 +1,5 @@
+Type,Endpoint,Parameter,Severity,Details,Mitigation
+IDOR,http://localhost:8080/dvwa/,username,High,IDOR test value 1 found in response.,Enforce server-side access checks.
+IDOR,http://localhost:8080/dvwa/,username,High,IDOR test value 2 found in response.,Enforce server-side access checks.
+IDOR,http://localhost:8080/dvwa/,user_token,High,IDOR test value 1 found in response.,Enforce server-side access checks.
+IDOR,http://localhost:8080/dvwa/,user_token,High,IDOR test value 2 found in response.,Enforce server-side access checks.
